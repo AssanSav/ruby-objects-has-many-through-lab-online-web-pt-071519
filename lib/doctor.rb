@@ -21,4 +21,7 @@ class Doctor
     new_appointment = Appointment.new(date, patient, self)
   end
   
+  def patients 
+    appointments.collect {|ap| ap.patient}
+  end
 end
