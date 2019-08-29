@@ -22,9 +22,9 @@ class Doctor
   end
   
   def patients 
-    binding.pry
     appointments.collect do |ap| 
       ap.patient
+      binding.pry
     end
   end
 end
