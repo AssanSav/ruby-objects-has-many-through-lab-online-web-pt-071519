@@ -14,7 +14,7 @@ class Doctor
   end
   
   def appointments 
-    Appointment.all.select {|ap| ap.doctor == self}
+    Appointment.all.select {|ap| ap.doctor}
   end
   
   def new_appointment(date, patient)
@@ -24,7 +24,6 @@ class Doctor
   def patients 
     appointments.collect do |ap| 
       ap.patient
-      binding.pry
     end
   end
 end
