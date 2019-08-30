@@ -27,4 +27,5 @@ class Doctor
       ap.patient
     end
   end
+  
 end
